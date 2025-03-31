@@ -52,7 +52,7 @@ export default function App() {
       return;
     }
 
-    let url = `https://viacep.com.br/ws/${x}/json/`;
+    let url = `https://viacep.com.br/ws/${cep}/json/`;
 
     fetch(url)
       .then((resp) => resp.json())
@@ -77,7 +77,7 @@ export default function App() {
         label={'Nome'}
         mode='outlined'
         style={styles.input}
-        theme={{ colors: { primary: '#333', background: '#e0e0e0' } }}
+        theme={{ colors: { primary: '#333', background: '#D8BFD8' } }}
       />
 
       <TextInput
@@ -85,14 +85,14 @@ export default function App() {
         mode='outlined'
         style={styles.input}
         onBlur={(event) => ValidaCPF(event.nativeEvent.text)}
-        theme={{ colors: { primary: '#333', background: '#e0e0e0' } }}
+        theme={{ colors: { primary: '#333', background: '#D8BFD8' } }}
       />
 
       <TextInput
         label={'Email'}
         mode='outlined'
         style={styles.input}
-        theme={{ colors: { primary: '#333', background: '#e0e0e0' } }}
+        theme={{ colors: { primary: '#333', background: '#D8BFD8' } }}
       />
 
       <TextInput
@@ -100,7 +100,7 @@ export default function App() {
         mode='outlined'
         style={styles.input}
         onBlur={(event) => ValidaTelefone (event.nativeEvent.text)}
-        theme={{ colors: { primary: '#333', background: '#e0e0e0' } }}
+        theme={{ colors: { primary: '#333', background: '#D8BFD8' } }}
       />
 
       <TextInput
@@ -108,7 +108,7 @@ export default function App() {
         mode='outlined'
         style={styles.input}
         onBlur={(event) => Validanascimento (event.nativeEvent.text)}
-        theme={{ colors: { primary: '#333', background: '#e0e0e0' } }}
+        theme={{ colors: { primary: '#333', background: '#D8BFD8' } }}
       />
 
       <TextInput
@@ -118,7 +118,7 @@ export default function App() {
         maxLength={8}
         onChangeText={(value) => setCep(value)}
         style={styles.input}
-        theme={{ colors: { primary: '#333', background: '#e0e0e0' } }}
+        theme={{ colors: { primary: '#333', background: '#D8BFD8' } }}
       />
 
       <Button 
@@ -136,7 +136,7 @@ export default function App() {
         mode='outlined'
         disabled
         style={styles.input}
-        theme={{ colors: { primary: '#333', background: '#e0e0e0' } }}
+        theme={{ colors: { primary: '#333', background: '#D8BFD8' } }}
       />
 
       <TextInput
@@ -145,7 +145,7 @@ export default function App() {
         mode='outlined'
         disabled
         style={styles.input}
-        theme={{ colors: { primary: '#333', background: '#e0e0e0' } }}
+        theme={{ colors: { primary: '#333', background: '#D8BFD8' } }}
       />
 
       <TextInput
@@ -154,7 +154,7 @@ export default function App() {
         mode='outlined'
         disabled
         style={styles.input}
-        theme={{ colors: { primary: '#333', background: '#e0e0e0' } }}
+        theme={{ colors: { primary: '#333', background: '#D8BFD8' } }}
       />
       <TextInput
         label={'Estado'}
@@ -162,7 +162,7 @@ export default function App() {
         mode='outlined'
         disabled
         style={styles.input}
-        theme={{ colors: { primary: '#333', background: '#e0e0e0' } }}
+        theme={{ colors: { primary: '#333', background: '#D8BFD8' } }}
       />
       <StatusBar style="auto" />
     </View>
@@ -172,7 +172,7 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#836FFF',
+    backgroundColor: '#9370DB',
     alignItems: 'center',
     justifyContent: 'center',
     padding: 20,
